@@ -90,31 +90,6 @@ int main()
 
 		std::ifstream file("pci.ids");
 		std::string line;
-		/*for (;;){
-			std::getline(file, line);
-			if (line.length() > 5)
-			{
-				if (line.substr(0, 4) == vendorID)
-				{
-					std::cout << "vendor: " + vendorID + " ";
-					std::cout << line.substr(4, line.length() - 4) << std::endl;
-					for (;;)
-					{
-						if (line.length() > 5)
-						{
-							if (line.substr(1, 4) == deviceID){
-								std::cout << "\t device: " + deviceID + " ";
-								std::cout << line.substr(4, line.length() - 4) << std::endl;
-								file.close();
-								break;
-							}
-						}
-						std::getline(file, line);
-					}break;
-				}
-			}
-		}*/
-
 		for (;;)
 		{
 			std::getline(file, line);
